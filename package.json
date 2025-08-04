@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/mrscallion90/hello-backend/issues"
   },
-  "homepage": "https://github.com/mrscallion90/hello-backend#readme"
+  "homepage": "https://github.com/mrscallion90/hello-backend#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
