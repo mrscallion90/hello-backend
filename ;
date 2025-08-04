@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 
 // Config
-const PORT = 8000;
+const PORT = 8000
 
 
 app.listen(PORT, () => {
-  console.log(`Server has started on localhost: ${PORT}`);
+  console.log("Server has started on localhost:${PORT}")
 });
