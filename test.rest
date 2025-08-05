@@ -1,0 +1,10 @@
+### TEST GET / ROUTE
+GET http://localhost:8000
+
+
+
+### TEST GET /dashboard ROUTE
+GET http://localhost:8000/dashboard
+
+### TEST GET /api/data ROUTE
+GET http://localhost:8000/api/data
