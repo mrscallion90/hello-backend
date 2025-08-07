@@ -5,7 +5,7 @@ const app = express();
 const PORT = 8000;
 
 let data = {
-  name: 'John',
+  name: ['John'],
 }
 
 //Middleware
@@ -32,10 +32,22 @@ app.post('/api/data' , (req, res) => {
   // Say someone wants to create an account, when they put credentials, the browser sends network request
   const reqData = req.body;
   console.log(reqData);
+  data.name.push(reqData.name);
+
+  console.log(data);
+
+  res.sendStatus(201);
 })
 
 app.get('/api/data', (req, res) => {
   res.send(data);
+});
+
+app.delete('/api/endpoint', (req, res) => {
+  data.name.pop();
+  console.log(data);
+
+  res.sendStatus(203);
 });
 
 

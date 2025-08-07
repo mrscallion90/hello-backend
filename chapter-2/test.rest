@@ -16,3 +16,12 @@ Content-Type: application/json
 {
     "name": "Gilgamesh"
 }
+
+### TEST DELETE /api/endpoint ROUTE
+
+DELETE http://localhost:8000/api/endpoint
+Content-Type: application/json
+
+{
+    "name" : "Gilgamesh"
+}
