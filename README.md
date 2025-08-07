@@ -12,6 +12,7 @@ Using the code:
 .env is basically the config 
 PORT = xxxx # 4 digit number
 SALT = x # any number
+JWT_SECRET = # Token salt
 
 Credits:
 - https://youtu.be/9BD9eK9VqXA 
