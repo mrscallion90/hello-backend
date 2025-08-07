@@ -3,10 +3,15 @@ This is where it all started, my backend journey :D
 
 Master one thing hopefully
 Goals:
-1. Finish this project till the end and deploy it and stress test it
+-  Finish this project till the end and deploy it and stress test it
 
 For developing:
 npm run dev # Live changes take effect
+
+Using the code:
+.env is basically the config 
+PORT = xxxx # 4 digit number
+SALT = x # 1 digit number
 
 Credits:
 - https://youtu.be/9BD9eK9VqXA 
