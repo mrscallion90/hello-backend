@@ -7,11 +7,17 @@ import db from '../db.js';
 const router = express.Router();
 
 router.post('/register', (req, res) => {
-  res.send('Register!')
+  const username = req.body.username;
+  const password = bcrypt.hashSync(req.body.password, process.env.SALT);
+
+  console.log(username, password);
+
+  res.sendStatus(201);
 })
 
 router.post('/login', (req, res) => {
-  res.send('Login!')
+  const username = req.body.username;
+  const password = bcrypt.hashSync(req.body.password, process.env.SALT);
 })
 
 export default router;
