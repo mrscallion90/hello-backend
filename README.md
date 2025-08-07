@@ -11,7 +11,7 @@ npm run dev # Live changes take effect
 Using the code:
 .env is basically the config 
 PORT = xxxx # 4 digit number
-SALT = x # 1 digit number
+SALT = x # any number
 
 Credits:
 - https://youtu.be/9BD9eK9VqXA 
