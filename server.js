@@ -8,11 +8,17 @@ let data = {
   name: 'John',
 }
 
+//Middleware
+app.use(express.json());
 
 // Routes/path --> link.com/path
 app.get('/', (req, res) => {
-  console.log('Hello, world!');
-  res.sendStatus(200);
+  res.send(`
+    <body>
+      <p>${JSON.stringify(data)}
+      </p>
+    </body>
+    `);
 });
 
 app.get('/dashboard', (req, res) => {
@@ -20,6 +26,13 @@ app.get('/dashboard', (req, res) => {
 });
 
 // API endpoint (where u get users response?)
+// CRUD -> Create (POST), Read(GET), Update(PUT), Delete(DELETE)
+
+app.post('/api/data' , (req, res) => {
+  // Say someone wants to create an account, when they put credentials, the browser sends network request
+  const reqData = req.body;
+  console.log(reqData);
+})
 
 app.get('/api/data', (req, res) => {
   res.send(data);

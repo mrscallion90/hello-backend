@@ -8,3 +8,11 @@ GET http://localhost:8000/dashboard
 
 ### TEST GET /api/data ROUTE
 GET http://localhost:8000/api/data
+
+### TEST POST /api/data ROUTE
+POST http://localhost:8000/api/data
+Content-Type: application/json
+
+{
+    "name": "Gilgamesh"
+}
